@@ -13,6 +13,7 @@
   */
 
   var deepEquals = function(obj1, obj2){
+<<<<<<< HEAD
   	for (var key in obj1){
   		for(var key in obj2){
   			if( Object.getPrototypeOf(obj1[key])!=="Object" && Object.getPrototypeOf(obj2[key])!=="Object"){
@@ -28,3 +29,7 @@
   	return false
   }
 
+=======
+
+  }
+>>>>>>> 1ab6029e2b0ea9577ff72d4c21a7412c9e55a82c
