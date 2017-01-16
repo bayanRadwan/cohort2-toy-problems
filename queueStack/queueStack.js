@@ -53,3 +53,4 @@
    	return inbox.this.stack.length
    };
  };
+// TIME COMPLIXITY IS O(1)
