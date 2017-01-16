@@ -13,6 +13,7 @@ flatten('a', ['b', 2], 3, null, [[4], ['c']]) // returns ['a', 'b', 2, 3, null, 
 */
 
 function flatten(){
+<<<<<<< HEAD
 	var arr=[];
 	for (var i = 0 ; i < arguments.length ; i++){
 		if(typeof(arguments[i])==="number"||typeof(arguments[i])==="string"){
@@ -28,3 +29,7 @@ function flatten(){
 	return arr
 }
 // time complixity O(n)
+=======
+
+}
+>>>>>>> ae4eb3ea71b7d7dbe78fe9f7d97772c1cd6928d1
