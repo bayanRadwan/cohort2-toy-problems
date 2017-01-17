@@ -42,7 +42,7 @@ for ( var i = 0 ; i < steps ; i ++){
 	return array
 }
 
-
+// time complixity is O(n)
 
 /*
 Problem 2 (Advanced)
