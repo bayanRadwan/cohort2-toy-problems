@@ -35,6 +35,7 @@ rotate(data, 12478) // => [3, 4, 5, 1, 2]
 
 */
 function rotate(array, steps){
+<<<<<<< HEAD
 	}
 for ( var i = 0 ; i < steps ; i ++){
 	array.unshift(array.pop(steps))
@@ -43,6 +44,10 @@ for ( var i = 0 ; i < steps ; i ++){
 }
 
 // time complixity is O(n)
+=======
+
+}
+>>>>>>> 858d22128908d635f902ddc6a58f47a633bf0238
 
 /*
 Problem 2 (Advanced)
