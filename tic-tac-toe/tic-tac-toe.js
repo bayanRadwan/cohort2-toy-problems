@@ -21,6 +21,27 @@ var solvedBoard = [[0,1,1],
 ticTacToe(solvedBoard);//should return 1
 */
 
-function ticTacToe(board){
-	
-};
+	function ticTacToe(board){
+		if(board.indexOf(0)){
+			return -1 ;
+		}
+		for (var i = 0 ; i < board.length; i++) {
+			var sum =0 ;
+			for(var j = 0 ; j < i.length ; j++){
+			sum+= board[i][j];
+		};
+		if(sum === 3){
+			return 1
+		}else if(board===-3){
+			return 2
+		}
+		var csum=0
+		for(var i = 0; i<3;i++){
+			csum+=board[i][j] 
+	}
+	if(csum === 3){
+		return 1
+	}else if(csum === -3){
+		return 2
+	}
+}
