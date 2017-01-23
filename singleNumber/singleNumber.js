@@ -14,8 +14,15 @@ arr = [2,4,3,6,8,2,3,4,8];
 singleNumber(arr);//should return 6 because it only appear once
 */
 function singleNumber(arr){
-
+	var val =0
+	var x = arr.shift()
+	arr.shift()
+	if(x !== arr.shift()){
+		val = arr.shift()
+	}
+	return val;
 }
+// its also without extra memory
 
 /*
 Problem 2 (medium):
@@ -32,7 +39,18 @@ twoSum(nums,9); //should return [0,1] because nums[0] + nums[1] = 2 + 7 = 9;
 */
 
 function twoSum(nums, target){
-
+	var arr =[]
+	var x= nums.shift();
+	if(x=== target){
+		arr.push(0)
+	}else if(x > target){
+		nums.shift();
+	}else if(x < target ){
+		if(x + nums.shift()===target){
+			arr.push(x,nums[0])
+		}
+	}
+	return arr;
 }
 
 /*
