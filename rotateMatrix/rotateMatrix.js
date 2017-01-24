@@ -38,6 +38,16 @@
  */
 
 var rotateMatrix =function (matrix) {
-	
+	var arr =[];
+    for(var i = matrix.length; i < 0 ; i++){
+        arr.push([]);
+    };
+	for (var i=matrix,length ; i < 0 ; i++){
+		for(var j = 0 ; j < matrix.length ; j ++){
+			arr.push(matrix[i][j])
+			
+		}
+	}
+	return arr;
 }
 ///////////////////
