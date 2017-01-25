@@ -11,5 +11,15 @@
  */
 
 var spiralTraversal = function(matrix){
+	var arr=[];
+	for(var i= 0; i< matrix.length; i++){
+		for(var j= 0 ; j< matrix.length; j++)
+			if(i=== 0 ){
+				arr.push(matrix[i][j])
+			}else if(j> 0){
+				arr.push(matrix[i++][j])
+			}
 
+		}
+return arr;
 };

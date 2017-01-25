@@ -39,15 +39,13 @@
 
 var rotateMatrix =function (matrix) {
 	var arr =[];
-    for(var i = matrix.length; i < 0 ; i++){
-        arr.push([]);
-    };
-	for (var i=matrix,length ; i < 0 ; i++){
-		for(var j = 0 ; j < matrix.length ; j ++){
-			arr.push(matrix[i][j])
-			
-		}
-	}
+	var j=0;
+    for(var i = matrix.length - 1; i < 0 ; i--){
+ 	if(j<matrix.length -1){
+ 		arr.push(matrix[j][i])
+ 		j++
+ 	}
+    }
 	return arr;
 }
 ///////////////////
